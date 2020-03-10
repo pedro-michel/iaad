@@ -1,0 +1,3 @@
+  
+Um banco de dados, armazena Informações sobre um domínio especifico. 
+Enquanto um Sistema de gerenciamento de banco de dados (SGBD),funciona com conjuntos de programas os quais são responsáveis pelo gerenciamento de um banco de dados.
