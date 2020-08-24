@@ -1,0 +1,41 @@
+use bar_si;
+
+select nome_bebida from bebidas;
+
+
+select nome_bebida from info_bebidas;
+
+select *  from bebidas order by nome_bebida desc;
+
+select * from bebidas where nome_bebida != 'Blue Moon';
+
+select upper(nome_bebida) from bebidas;
+
+select * from bebidas where qtd1 > qtd2;
+
+select min(qtd1),avg(qtd1),max(qtd1),min(qtd2),avg(qtd2),max(qtd2) from bebidas ;
+
+# # 
+
+select * from bebidas;
+
+# # 
+select * from info_bebidas;
+
+select * from bebidas where nome_bebida like 'B%';
+
+select * from info_bebidas where preco between 3 and 4;
+
+select * from info_bebidas where gelo != 'N' and calorias > '50';
+
+select avg(preco),avg(carboidratos),avg(calorias) from info_bebidas;
+
+select avg(preco),avg(carboidratos),avg(calorias),cor as 'Nome Cor', count(nome_bebida) from info_bebidas group by cor;
+
+select * from info_bebidas where carboidratos < 5.00 OR preco < 3.00;
+
+select * from info_bebidas where nome_bebida like 'L%';
+
+select * from info_bebidas where calorias is null or carboidratos is null;
+
+SELECT * FROM info_bebidas WHERE nome_bebida NOT IN (SELECT nome_bebida FROM bebidas);
